@@ -1,6 +1,6 @@
 {
   "log": {
-    "loglevel": "info"
+    "loglevel": "warning"
   },
   "inbounds": [
     {
@@ -18,7 +18,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/ray"
+          "path": "/vmess"
         }
       }
     }
