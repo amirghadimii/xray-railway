@@ -1,4 +1,4 @@
-FROM teddysun/xray
+FROM teddysun/xray:latest
 
 WORKDIR /etc/xray
 
@@ -6,5 +6,4 @@ COPY config.json /etc/xray/config.json
 
 EXPOSE 8080
 
-ENTRYPOINT ["xray"]
-CMD ["run", "-c", "/etc/xray/config.json"]
+CMD ["xray", "run", "-config", "/etc/xray/config.json"]
